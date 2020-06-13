@@ -1,7 +1,7 @@
-# sass-media-queries-mixin
-sass-media-queries-mixin
+# sass-mq-mixin
+sass-mq-mixin
 
-@import 'sass-queries-mixin.scss';
+@import 'sass-mq-mixin.scss';
 
 <pre>
 @include screen(min, max, orientation) {
