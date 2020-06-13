@@ -1,6 +1,10 @@
 # sass-mq-mixin
 sass-mq-mixin
 
+Install
+<pre>npm i sass-mq-mixin</pre>
+
+
 @import 'sass-mq-mixin.scss';
 
 <pre>
