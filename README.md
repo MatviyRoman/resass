@@ -7,6 +7,26 @@ sass-media-queries-mixin
 @include screen(min, max, orientation) {
     //your code
 }
+
+@include max-screen(max, orientation) {
+    //your code
+}
+
+@include min-screen(min, orientation) {
+    //your code
+}
+
+@include screen-height(min, max, orientation) {
+    //your code
+}
+
+@include max-screen-height(max, orientation) {
+    //your code
+}
+
+@include min-screen-height(min, orientation) {
+    //your code
+}
 </pre>
 <hr>
 
