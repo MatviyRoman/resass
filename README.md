@@ -48,3 +48,21 @@ After
 }
 </pre>
 <hr>
+
+Before
+<pre>
+@include screen(0, 325px) {
+    .test {
+        width: 100%;
+    }
+}
+</pre>
+
+After
+<pre>
+@media only screen and (max-width: 325px) {
+  .test {
+    width: 100%;
+  }
+}
+</pre>
