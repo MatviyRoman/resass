@@ -66,3 +66,22 @@ After
   }
 }
 </pre>
+<hr>
+
+Before
+<pre>
+@include screen(325px) {
+    .test {
+        width: 100%;
+    }
+}
+</pre>
+
+After
+<pre>
+@media only screen and (min-width: 325px) {
+  .test {
+    width: 100%;
+  }
+}
+</pre>
