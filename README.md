@@ -6,6 +6,7 @@ sass-media-queries-mixin
 @include screen(min, max, orientation) {
     //your code
 }
+<hr>
 
 
 Before
