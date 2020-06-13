@@ -85,3 +85,40 @@ After
   }
 }
 </pre>
+<hr>
+Before
+<pre>
+@include screen-height(100vh, portrait) {
+    .test {
+        width: 100%;
+    }
+}
+</pre>
+
+After
+<pre>
+@media only screen and (min-height: 100vh) and (orientation: portrait) {
+  .test {
+    width: 100%;
+  }
+}
+</pre>
+<hr>
+
+Before
+<pre>
+@include max-screen-height(100vh, landscape) {
+    .test {
+        width: 100%;
+    }
+}
+</pre>
+
+After
+<pre>
+@media only screen and (max-height: 100vh) and (landscape: landscape) {
+  .test {
+    width: 100%;
+  }
+}
+</pre>
