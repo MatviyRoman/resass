@@ -116,7 +116,7 @@ Before
 
 After
 <pre>
-@media only screen and (max-height: 100vh) and (landscape: landscape) {
+@media only screen and (max-height: 100vh) and (orientation: portrait) {
   .test {
     width: 100%;
   }
