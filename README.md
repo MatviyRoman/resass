@@ -24,6 +24,7 @@ After
     width: 100%;
   }
 }
+<hr>
 
 Before
 
@@ -40,3 +41,4 @@ After
     width: 100%;
   }
 }
+<hr>
