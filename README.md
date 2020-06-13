@@ -3,9 +3,11 @@ sass-media-queries-mixin
 
 @import 'sass-queries-mixin.scss';
 
+<pre>
 @include screen(min, max, orientation) {
     //your code
 }
+</pre>
 <hr>
 
 
