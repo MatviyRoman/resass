@@ -1,8 +1,8 @@
 # scss-mq-mix
-<h1>scss media queries mixin</h1>
+<h1>sass media queries mixin</h1>
 
-[![Version](https://img.shields.io/npm/v/scss-mq-mix.svg)](http://npm.im/scss-mq-mix)
-[![Downloads](https://img.shields.io/npm/dm/scss-mq-mix.svg)](http://npm.im/scss-mq-mix)
+[![Version](https://img.shields.io/npm/v/sass-mq-mix.svg)](http://npm.im/sass-mq-mix)
+[![Downloads](https://img.shields.io/npm/dm/sass-mq-mix.svg)](http://npm.im/sass-mq-mix)
 
 Mixins for checking **group of devices** (mobile, tablet, laptop, desktop) or **device by name** (iPhone 5, iPhone X, iPhone 11 Pro Max, iPad Pro 12.9, etc). Expandable and very simple for usage.
 
@@ -34,9 +34,9 @@ Mixins for checking **group of devices** (mobile, tablet, laptop, desktop) or **
 ## Installation
 
 ```bash
-$ npm install scss-mq-mix
+$ npm install sass-mq-mix
 or
-$ curl -O https://raw.githubusercontent.com/MatviyRoman/scss-mq-mix/master/_scss-mq-mix.scss
+$ curl -O https://raw.githubusercontent.com/MatviyRoman/sass-mq-mix/master/_sass-mq-mix.scss
 ```
 
 
@@ -45,7 +45,7 @@ $ curl -O https://raw.githubusercontent.com/MatviyRoman/scss-mq-mix/master/_scss
 Include mixins to app:
 
 ```scss
-@import "scss-mq-mix/_scss-mq-mix";
+@import "sass-mq-mix/_sass-mq-mix";
 ```
 
 
@@ -262,7 +262,7 @@ _Well, Yes. iPad Pro 12.9" is a laptop because of its size._
 ### Expanding the list of devices:
 
 You can add support for custom devices or group of devices without editing the source.
-Before `@import "scss-mq-mix/_scss-mq-mix"`, you must specify `$ms-devices` variable with a list of additional devices:
+Before `@import "sass-mq-mix/_sass-mq-mix"`, you must specify `$ms-devices` variable with a list of additional devices:
 
 ```scss
 $ms-devices: (
