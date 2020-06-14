@@ -122,107 +122,91 @@ After
   }
 }```
 
+```scss
 Before
 
-<pre>
 @include screen(768px, 320px, landscape) {
     .test {
         width: 100%;
     }
 }
-</pre>
 
 After
 
-<pre>
 @media only screen and (min-width: 320px) and (max-width: 768px) and (orientation: portrait) {
   .test {
     width: 100%;
   }
 }
-</pre>
-<hr>
+```
 
+```scss
 Before
 
-<pre>
 @include screen(0, 325px) {
     .test {
         width: 100%;
     }
 }
-</pre>
 
 After
 
-<pre>
 @media only screen and (max-width: 325px) {
   .test {
     width: 100%;
   }
 }
-</pre>
-<hr>
-
+```
+```scss
 Before
 
-<pre>
 @include screen(325px) {
     .test {
         width: 100%;
     }
 }
-</pre>
 
 After
 
-<pre>
 @media only screen and (min-width: 325px) {
   .test {
     width: 100%;
   }
 }
-</pre>
-<hr>
+```
+```scss
 Before
-<pre>
 @include screen-height(100vh, portrait) {
     .test {
         width: 100%;
     }
 }
-</pre>
 
 After
 
-<pre>
 @media only screen and (min-height: 100vh) and (orientation: portrait) {
   .test {
     width: 100%;
   }
 }
-</pre>
-<hr>
-
+```
+```scss
 Before
 
-<pre>
 @include max-screen-height(100vh, landscape) {
     .test {
         width: 100%;
     }
 }
-</pre>
 
 After
 
-<pre>
 @media only screen and (max-height: 100vh) and (orientation: portrait) {
   .test {
     width: 100%;
   }
 }
-</pre>```
+```
 
 There are also common mixins:
 
