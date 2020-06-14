@@ -262,7 +262,7 @@ _Well, Yes. iPad Pro 12.9" is a laptop because of its size._
 ### Expanding the list of devices:
 
 You can add support for custom devices or group of devices without editing the source.
-Before `@import "scss-mq-mix/scss-mq-mix"`, you must specify `$ms-devices` variable with a list of additional devices:
+Before `@import "scss-mq-mix/_scss-mq-mix"`, you must specify `$ms-devices` variable with a list of additional devices:
 
 ```scss
 $ms-devices: (
