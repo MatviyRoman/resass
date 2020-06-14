@@ -1,4 +1,5 @@
-# Sass MediaScreen
+# scss-mq-mix
+<h1>scss media queries mixin</h1>
 
 [![Version](https://img.shields.io/npm/v/scss-mq-mix.svg)](http://npm.im/scss-mq-mix)
 [![Downloads](https://img.shields.io/npm/dm/scss-mq-mix.svg)](http://npm.im/scss-mq-mix)
