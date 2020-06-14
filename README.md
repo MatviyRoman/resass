@@ -36,7 +36,7 @@ Mixins for checking **group of devices** (mobile, tablet, laptop, desktop) or **
 ```bash
 $ npm install scss-mq-mix
 or
-$ curl -O https://raw.githubusercontent.com/RomanMatviy/scss-mq-mix/master/_scss-mq-mix.scss
+$ curl -O https://raw.githubusercontent.com/MatviyRoman/scss-mq-mix/master/_scss-mq-mix.scss
 ```
 
 
