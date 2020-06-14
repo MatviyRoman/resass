@@ -14,7 +14,7 @@ Mixins for checking **group of devices** (mobile, tablet, laptop, desktop) or **
 
 ### Important
 
-> Don't check the adaptability in the browser DevTools, there are [incorrectly calculated dimensions](https://codepen.io/gvozdb/pen/bPQmvv) of the sides in the landscape orientation of the device.
+> Don't check the adaptability in the browser DevTools, there are [incorrectly calculated dimensions](https://codepen.io/matviy/pen/ZEQOrmv) of the sides in the landscape orientation of the device.
 > It is better to check on a real device or in a simulator (for example, xCode Simulator).
 
 > Use [group-css-media-queries](https://github.com/Se7enSky/group-css-media-queries) to optimize media queries. Without it, a lot of the same `@media ...` code is generated, especially if for the sake of convenience to use the mixin `@include device()` in each selector separately. Wrapper for Gulp - [gulp-group-css-media-queries](https://github.com/avaly/gulp-group-css-media-queries).
@@ -102,141 +102,9 @@ Or even like this:
 }
 ```
 
-There are also common mixins:
+Examples
 
 ```scss
-@include screen(min-width, max-width, orientation) {/*...*/}
-@include min-screen(width) {/*...*/}
-@include max-screen(width) {/*...*/}
-
-@include screen-height(min-height, max-height, orientation) {/*...*/}
-@include min-screen-height(height) {/*...*/}
-@include max-screen-height(height) {/*...*/}
-
-@include landscape() {/*...*/}
-@include portrait() {/*...*/}
-```
-
-
-### List of supported devices:
-
-#### Groups
-
-- Mobiles 320-767px `mobile` `mobile-portrait` `mobile-landscape`
-- Tablets 768-1023px `tablet` `tablet-portrait` `tablet-landscape`
-- Laptops 1024-1199px `laptop` `laptop-portrait` `laptop-landscape`
-- Desktop >=1200px `desktop` `desktop-portrait` `desktop-landscape`
-
-#### Phones
-
-- iPhone 5, 5s, 5c, SE `iphone5` `iphone5s` `iphone5c` `iphonese`
-- iPhone 6, 6s, 7, 8 `iphone6` `iphone6s` `iphone7` `iphone8`
-- iPhone 6+, 6s+, 7+, 8+ `iphone6plus` `iphone6splus` `iphone7plus` `iphone8plus`
-- iPhone X, XS, 11 Pro `iphonex` `iphonexs` `iphone11pro`
-- iPhone XR, 11 `iphonexr` `iphone11`
-- iPhone XS Max, 11 Pro Max `iphonexsmax` `iphone11promax`
-
-#### Tablets
-
-- iPad 1, 2, Mini, Air `ipad1` `ipad2` `ipadmini` `ipadair`
-- iPad 3, 4, Pro 9.7" `ipad3` `ipad4` `ipadpro9`
-- iPad Pro 10.5" `ipadpro10`
-- iPad Pro 11.0" `ipadpro11`
-
-#### Laptops
-
-- iPad Pro 12.9" `ipadpro12`
-
-_Well, Yes. iPad Pro 12.9" is a laptop because of its size._
-
----
-
-### Expanding the list of devices:
-
-You can add support for custom devices or group of devices without editing the source.
-Before `@import "mediascreen"`, you must specify `$ms-devices` variable with a list of additional devices:
-
-```scss
-$ms-devices: (
-    desktop-sm: (
-        group: true, // group of devices
-        min: 1200px,
-        max: 1919px,
-    ),
-    desktop-md: (
-        group: true, // group of devices
-        min: 1920px,
-        max: 2879px,
-    ),
-    desktop-lg: (
-        group: true, // group of devices
-        min: 2880px,
-    ),
-    pixel2xl: (
-        group: false, // specific device
-        width: 411px, // or 412px?..
-        height: 823px,
-        pixel-ratio: 3.5,
-    ),
-    macbook12: (
-        group: false, // specific device
-        orientation: landscape,
-        width: 1440px,
-        height: 900px,
-        pixel-ratio: 2,
-    ),
-    imac27: (
-        group: false, // specific device
-        orientation: landscape,
-        width: 5120px,
-        height: 2880px,
-    ),
-);
-```
-
-
-## Credits
-- [Pavel Gvozdb](https://matviy.pp.ua)
-
-## License
-This software is open-source licensed under the [MIT license](https://opensource.org/licenses/MIT).
-
-
-
-
-
-
-### scss-mq-mix
-
-scss-mq-mix
-
-@import 'scss/scss-mq-mix.scss';
-
-<pre>
-@include screen(min, max, orientation) {
-    //your code
-}
-
-@include max-screen(max, orientation) {
-    //your code
-}
-
-@include min-screen(min, orientation) {
-    //your code
-}
-
-@include screen-height(min, max, orientation) {
-    //your code
-}
-
-@include max-screen-height(max, orientation) {
-    //your code
-}
-
-@include min-screen-height(min, orientation) {
-    //your code
-}
-</pre>
 <hr>
 
 Before
@@ -360,4 +228,104 @@ After
     width: 100%;
   }
 }
-</pre>
+</pre>```
+
+There are also common mixins:
+
+```scss
+@include screen(min-width, max-width, orientation) {/*...*/}
+@include screen(min-width, max-width, orientation) {/*...*/}
+@include min-screen(width) {/*...*/}
+@include max-screen(width) {/*...*/}
+
+@include screen-height(min-height, max-height, orientation) {/*...*/}
+@include min-screen-height(height) {/*...*/}
+@include max-screen-height(height) {/*...*/}
+
+@include landscape() {/*...*/}
+@include portrait() {/*...*/}
+```
+
+
+### List of supported devices:
+
+#### Groups
+
+- Mobiles 320-767px `mobile` `mobile-portrait` `mobile-landscape`
+- Tablets 768-1023px `tablet` `tablet-portrait` `tablet-landscape`
+- Laptops 1024-1199px `laptop` `laptop-portrait` `laptop-landscape`
+- Desktop >=1200px `desktop` `desktop-portrait` `desktop-landscape`
+
+#### Phones
+
+- iPhone 5, 5s, 5c, SE `iphone5` `iphone5s` `iphone5c` `iphonese`
+- iPhone 6, 6s, 7, 8 `iphone6` `iphone6s` `iphone7` `iphone8`
+- iPhone 6+, 6s+, 7+, 8+ `iphone6plus` `iphone6splus` `iphone7plus` `iphone8plus`
+- iPhone X, XS, 11 Pro `iphonex` `iphonexs` `iphone11pro`
+- iPhone XR, 11 `iphonexr` `iphone11`
+- iPhone XS Max, 11 Pro Max `iphonexsmax` `iphone11promax`
+
+#### Tablets
+
+- iPad 1, 2, Mini, Air `ipad1` `ipad2` `ipadmini` `ipadair`
+- iPad 3, 4, Pro 9.7" `ipad3` `ipad4` `ipadpro9`
+- iPad Pro 10.5" `ipadpro10`
+- iPad Pro 11.0" `ipadpro11`
+
+#### Laptops
+
+- iPad Pro 12.9" `ipadpro12`
+
+_Well, Yes. iPad Pro 12.9" is a laptop because of its size._
+
+---
+
+### Expanding the list of devices:
+
+You can add support for custom devices or group of devices without editing the source.
+Before `@import "scss-mq-mix/scss-mq-mix"`, you must specify `$ms-devices` variable with a list of additional devices:
+
+```scss
+$ms-devices: (
+    desktop-sm: (
+        group: true, // group of devices
+        min: 1200px,
+        max: 1919px,
+    ),
+    desktop-md: (
+        group: true, // group of devices
+        min: 1920px,
+        max: 2879px,
+    ),
+    desktop-lg: (
+        group: true, // group of devices
+        min: 2880px,
+    ),
+    pixel2xl: (
+        group: false, // specific device
+        width: 411px, // or 412px?..
+        height: 823px,
+        pixel-ratio: 3.5,
+    ),
+    macbook12: (
+        group: false, // specific device
+        orientation: landscape,
+        width: 1440px,
+        height: 900px,
+        pixel-ratio: 2,
+    ),
+    imac27: (
+        group: false, // specific device
+        orientation: landscape,
+        width: 5120px,
+        height: 2880px,
+    ),
+);
+```
+
+
+## Credits
+- [Roman Matviy](https://matviy.pp.ua)
+
+## License
+This software is open-source licensed under the [MIT license](https://opensource.org/licenses/MIT).
