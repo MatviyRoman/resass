@@ -34,11 +34,9 @@ Mixins for checking **group of devices** (mobile, tablet, laptop, desktop) or **
 ## Installation
 
 ```bash
-$ yarn add sass-mediascreen
+$ npm install scss-mq-mix
 or
-$ npm install sass-mediascreen
-or
-$ curl -O https://raw.githubusercontent.com/gvozdb/sass-mediascreen/master/_mediascreen.scss
+$ curl -O https://raw.githubusercontent.com/RomanMatviy/scss-mq-mix/master/_scss-mq-mix.scss
 ```
 
 
@@ -47,7 +45,7 @@ $ curl -O https://raw.githubusercontent.com/gvozdb/sass-mediascreen/master/_medi
 Include mixins to app:
 
 ```scss
-@import "mediascreen";
+@import "scss-mq-mix/_scss-mq-mix";
 ```
 
 
@@ -105,7 +103,6 @@ Or even like this:
 Examples
 
 ```scss
-
 Before
 
 @include screen(320px, 768px, portrait) {
@@ -120,7 +117,8 @@ After
   .test {
     width: 100%;
   }
-}```
+}
+```
 
 ```scss
 Before
@@ -157,6 +155,7 @@ After
   }
 }
 ```
+
 ```scss
 Before
 
@@ -174,6 +173,7 @@ After
   }
 }
 ```
+
 ```scss
 Before
 @include screen-height(100vh, portrait) {
@@ -190,6 +190,7 @@ After
   }
 }
 ```
+
 ```scss
 Before
 
