@@ -105,28 +105,22 @@ Or even like this:
 Examples
 
 ```scss
-<hr>
 
 Before
 
-<pre>
 @include screen(320px, 768px, portrait) {
     .test {
         width: 100%;
     }
 }
-</pre>
 
 After
 
-<pre>
 @media only screen and (min-width: 320px) and (max-width: 768px) and (orientation: portrait) {
   .test {
     width: 100%;
   }
-}
-</pre>
-<hr>
+}```
 
 Before
 
