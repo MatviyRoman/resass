@@ -1,11 +1,8 @@
-# sass-mq-mixin
-sass-mq-mixin
+# scss-mq-mix
 
-Install
-<pre>npm i sass-mq-mixin</pre>
+scss-mq-mix
 
-
-@import 'sass-mq-mixin.scss';
+@import 'scss/scss-mq-mix.scss';
 
 <pre>
 @include screen(min, max, orientation) {
@@ -34,8 +31,8 @@ Install
 </pre>
 <hr>
 
-
 Before
+
 <pre>
 @include screen(320px, 768px, portrait) {
     .test {
@@ -45,8 +42,9 @@ Before
 </pre>
 
 After
+
 <pre>
-@media only screen and (max-width: 768px) and (min-width: 320px) and (orientation: portrait) {
+@media only screen and (min-width: 320px) and (max-width: 768px) and (orientation: portrait) {
   .test {
     width: 100%;
   }
@@ -55,6 +53,7 @@ After
 <hr>
 
 Before
+
 <pre>
 @include screen(768px, 320px, landscape) {
     .test {
@@ -64,8 +63,9 @@ Before
 </pre>
 
 After
+
 <pre>
-@media only screen and (max-width: 768px) and (min-width: 320px) and (orientation: landscape) {
+@media only screen and (min-width: 320px) and (max-width: 768px) and (orientation: portrait) {
   .test {
     width: 100%;
   }
@@ -74,6 +74,7 @@ After
 <hr>
 
 Before
+
 <pre>
 @include screen(0, 325px) {
     .test {
@@ -83,6 +84,7 @@ Before
 </pre>
 
 After
+
 <pre>
 @media only screen and (max-width: 325px) {
   .test {
@@ -93,6 +95,7 @@ After
 <hr>
 
 Before
+
 <pre>
 @include screen(325px) {
     .test {
@@ -102,6 +105,7 @@ Before
 </pre>
 
 After
+
 <pre>
 @media only screen and (min-width: 325px) {
   .test {
@@ -120,6 +124,7 @@ Before
 </pre>
 
 After
+
 <pre>
 @media only screen and (min-height: 100vh) and (orientation: portrait) {
   .test {
@@ -130,6 +135,7 @@ After
 <hr>
 
 Before
+
 <pre>
 @include max-screen-height(100vh, landscape) {
     .test {
@@ -139,6 +145,7 @@ Before
 </pre>
 
 After
+
 <pre>
 @media only screen and (max-height: 100vh) and (orientation: portrait) {
   .test {
