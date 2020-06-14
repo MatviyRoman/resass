@@ -1,4 +1,4 @@
-# scss-mq-mix
+# sass-mq-mix
 <h1>sass media queries mixin</h1>
 
 [![Version](https://img.shields.io/npm/v/sass-mq-mix.svg)](http://npm.im/sass-mq-mix)
