@@ -1,4 +1,5 @@
 # sass-mq-mix
+
 <h1>sass media queries mixin</h1>
 
 [![Version](https://img.shields.io/npm/v/sass-mq-mix.svg)](http://npm.im/sass-mq-mix)
@@ -6,11 +7,9 @@
 
 Mixins for checking **group of devices** (mobile, tablet, laptop, desktop) or **device by name** (iPhone 5, iPhone X, iPhone 11 Pro Max, iPad Pro 12.9, etc). Expandable and very simple for usage.
 
-
 ### Helpful Links
 
 - [Demo](http://scss-mq-mix.matviy.pp.ua)
-
 
 ### Important
 
@@ -19,35 +18,33 @@ Mixins for checking **group of devices** (mobile, tablet, laptop, desktop) or **
 
 > Use [group-css-media-queries](https://github.com/Se7enSky/group-css-media-queries) to optimize media queries. Without it, a lot of the same `@media ...` code is generated, especially if for the sake of convenience to use the mixin `@include device()` in each selector separately. Wrapper for Gulp - [gulp-group-css-media-queries](https://github.com/avaly/gulp-group-css-media-queries).
 
-
 ## Table of Contents
 
 - [Installation](#installation)
 - [Documentation](#documentation)
-    - [Examples](#examples)
-    - [List of supported devices](#list-of-supported-devices)
-    - [Expanding the list of devices](#expanding-the-list-of-devices)
+  - [Examples](#examples)
+  - [List of supported devices](#list-of-supported-devices)
+  - [Expanding the list of devices](#expanding-the-list-of-devices)
 - [Credits](#credits)
 - [License](#license)
-
 
 ## Installation
 
 ```bash
+$ git clone https://github.com/MatviyRoman/sass-mq-mix.git
+or
 $ npm install sass-mq-mix
 or
 $ curl -O https://raw.githubusercontent.com/MatviyRoman/sass-mq-mix/master/_sass-mq-mix.scss
 ```
-
 
 ## Documentation
 
 Include mixins to app:
 
 ```scss
-@import "sass-mq-mix/_sass-mq-mix";
+@import "sass-mq-mix/mq";
 ```
-
 
 ### Examples:
 
@@ -55,16 +52,16 @@ It can be used like this:
 
 ```scss
 @include device(iPhone5, portrait) {
-    // portrait orientation
-    // iPhone 5, iPhone 5s, iPhone 5c, iPhone SE
+  // portrait orientation
+  // iPhone 5, iPhone 5s, iPhone 5c, iPhone SE
 }
 @include device(iPhone6Plus iPhoneXR, landscape) {
-    // landscape orientation
-    // iPhone 6+, iPhone 6s+, iPhone 7+, iPhone 8+, iPhone XR, iPhone 11
+  // landscape orientation
+  // iPhone 6+, iPhone 6s+, iPhone 7+, iPhone 8+, iPhone XR, iPhone 11
 }
 @include device(iPadPro10 iPadPro11 iPadPro12) {
-    // all orientations
-    // iPad Pro 10.5, iPad Pro 11, iPad Pro 12.9
+  // all orientations
+  // iPad Pro 10.5, iPad Pro 11, iPad Pro 12.9
 }
 ```
 
@@ -72,12 +69,12 @@ Or like this:
 
 ```scss
 @include device(desktop) {
-    // all orientations
-    // desktop
+  // all orientations
+  // desktop
 }
 @include device(mobile tablet laptop, landscape) {
-    // landscape orientation
-    // mobile, tablet, laptop
+  // landscape orientation
+  // mobile, tablet, laptop
 }
 ```
 
@@ -85,35 +82,40 @@ Or even like this:
 
 ```scss
 @include device(mobile-landscape tablet laptop) {
-    // landscape orientation
-    // mobile
+  // landscape orientation
+  // mobile
 
-    // all orientations
-    // tablet, laptop
+  // all orientations
+  // tablet, laptop
 }
 @include device(mobile-landscape tablet laptop, portrait) {
-    // landscape orientation
-    // mobile
+  // landscape orientation
+  // mobile
 
-    // portrait orientation
-    // tablet, laptop
+  // portrait orientation
+  // tablet, laptop
 }
 ```
 
 Examples
 
 ```scss
-Before
-
-@include screen(320px, 768px, portrait) {
-    .test {
-        width: 100%;
-    }
+Before @include screen(320px, 768px, portrait) {
+  .test {
+    width: 100%;
+  }
 }
 
 After
-
-@media only screen and (min-width: 320px) and (max-width: 768px) and (orientation: portrait) {
+  @media
+  only
+  screen
+  and
+  (min-width: 320px)
+  and
+  (max-width: 768px)
+  and
+  (orientation: portrait) {
   .test {
     width: 100%;
   }
@@ -121,17 +123,22 @@ After
 ```
 
 ```scss
-Before
-
-@include screen(768px, 320px, landscape) {
-    .test {
-        width: 100%;
-    }
+Before @include screen(768px, 320px, landscape) {
+  .test {
+    width: 100%;
+  }
 }
 
 After
-
-@media only screen and (min-width: 320px) and (max-width: 768px) and (orientation: portrait) {
+  @media
+  only
+  screen
+  and
+  (min-width: 320px)
+  and
+  (max-width: 768px)
+  and
+  (orientation: portrait) {
   .test {
     width: 100%;
   }
@@ -139,17 +146,13 @@ After
 ```
 
 ```scss
-Before
-
-@include screen(0, 325px) {
-    .test {
-        width: 100%;
-    }
+Before @include screen(0, 325px) {
+  .test {
+    width: 100%;
+  }
 }
 
-After
-
-@media only screen and (max-width: 325px) {
+After @media only screen and (max-width: 325px) {
   .test {
     width: 100%;
   }
@@ -157,17 +160,13 @@ After
 ```
 
 ```scss
-Before
-
-@include screen(325px) {
-    .test {
-        width: 100%;
-    }
+Before @include screen(325px) {
+  .test {
+    width: 100%;
+  }
 }
 
-After
-
-@media only screen and (min-width: 325px) {
+After @media only screen and (min-width: 325px) {
   .test {
     width: 100%;
   }
@@ -175,16 +174,13 @@ After
 ```
 
 ```scss
-Before
-@include screen-height(100vh, portrait) {
-    .test {
-        width: 100%;
-    }
+Before @include screen-height(100vh, portrait) {
+  .test {
+    width: 100%;
+  }
 }
 
-After
-
-@media only screen and (min-height: 100vh) and (orientation: portrait) {
+After @media only screen and (min-height: 100vh) and (orientation: portrait) {
   .test {
     width: 100%;
   }
@@ -192,17 +188,13 @@ After
 ```
 
 ```scss
-Before
-
-@include max-screen-height(100vh, landscape) {
-    .test {
-        width: 100%;
-    }
+Before @include max-screen-height(100vh, landscape) {
+  .test {
+    width: 100%;
+  }
 }
 
-After
-
-@media only screen and (max-height: 100vh) and (orientation: portrait) {
+After @media only screen and (max-height: 100vh) and (orientation: portrait) {
   .test {
     width: 100%;
   }
@@ -212,19 +204,36 @@ After
 There are also common mixins:
 
 ```scss
-@include screen(min-width, max-width, orientation) {/*...*/}
-@include screen(min-width, max-width, orientation) {/*...*/}
-@include min-screen(width) {/*...*/}
-@include max-screen(width) {/*...*/}
+@include screen(min-width, max-width, orientation) {
+  /*...*/
+}
+@include screen(min-width, max-width, orientation) {
+  /*...*/
+}
+@include min-screen(width) {
+  /*...*/
+}
+@include max-screen(width) {
+  /*...*/
+}
 
-@include screen-height(min-height, max-height, orientation) {/*...*/}
-@include min-screen-height(height) {/*...*/}
-@include max-screen-height(height) {/*...*/}
+@include screen-height(min-height, max-height, orientation) {
+  /*...*/
+}
+@include min-screen-height(height) {
+  /*...*/
+}
+@include max-screen-height(height) {
+  /*...*/
+}
 
-@include landscape() {/*...*/}
-@include portrait() {/*...*/}
+@include landscape() {
+  /*...*/
+}
+@include portrait() {
+  /*...*/
+}
 ```
-
 
 ### List of supported devices:
 
@@ -266,45 +275,53 @@ Before `@import "sass-mq-mix/_sass-mq-mix"`, you must specify `$ms-devices` vari
 
 ```scss
 $ms-devices: (
-    desktop-sm: (
-        group: true, // group of devices
-        min: 1200px,
-        max: 1919px,
-    ),
-    desktop-md: (
-        group: true, // group of devices
-        min: 1920px,
-        max: 2879px,
-    ),
-    desktop-lg: (
-        group: true, // group of devices
-        min: 2880px,
-    ),
-    pixel2xl: (
-        group: false, // specific device
-        width: 411px, // or 412px?..
-        height: 823px,
-        pixel-ratio: 3.5,
-    ),
-    macbook12: (
-        group: false, // specific device
-        orientation: landscape,
-        width: 1440px,
-        height: 900px,
-        pixel-ratio: 2,
-    ),
-    imac27: (
-        group: false, // specific device
-        orientation: landscape,
-        width: 5120px,
-        height: 2880px,
-    ),
+  desktop-sm: (
+    group: true,
+    // group of devices
+      min: 1200px,
+    max: 1919px
+  ),
+  desktop-md: (
+    group: true,
+    // group of devices
+      min: 1920px,
+    max: 2879px
+  ),
+  desktop-lg: (
+    group: true,
+    // group of devices
+      min: 2880px
+  ),
+  pixel2xl: (
+    group: false,
+    // specific device
+      width: 411px,
+    // or 412px?..
+      height: 823px,
+    pixel-ratio: 3.5
+  ),
+  macbook12: (
+    group: false,
+    // specific device
+      orientation: landscape,
+    width: 1440px,
+    height: 900px,
+    pixel-ratio: 2
+  ),
+  imac27: (
+    group: false,
+    // specific device
+      orientation: landscape,
+    width: 5120px,
+    height: 2880px
+  )
 );
 ```
 
-
 ## Credits
+
 - [Roman Matviy](https://matviy.pp.ua)
 
 ## License
+
 This software is open-source licensed under the [MIT license](https://opensource.org/licenses/MIT).
