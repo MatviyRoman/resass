@@ -2,7 +2,7 @@
 
 <h1>sass media queries mixin</h1>
 
-[![Donate]](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=E2H8329XLYRKQ&source=url)
+[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=E2H8329XLYRKQ&source=url)
 [![Version](https://img.shields.io/npm/v/sass-mq-mix.svg)](http://npm.im/sass-mq-mix)
 [![Downloads](https://img.shields.io/npm/dm/sass-mq-mix.svg)](http://npm.im/sass-mq-mix)
 
@@ -331,6 +331,8 @@ This software is open-source licensed under the [MIT license](https://opensource
 ## Donate
 
 Buy me a coffee :)
+
+QR Code <img src="" alt="donation sass-mq-mix">
 
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick" />
