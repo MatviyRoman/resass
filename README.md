@@ -26,8 +26,10 @@ Mixins for checking **group of devices** (mobile, tablet, laptop, desktop) or **
   - [Examples](#examples)
   - [List of supported devices](#list-of-supported-devices)
   - [Expanding the list of devices](#expanding-the-list-of-devices)
-- [Credits](#credits)
-- [License](#license)
+- [About](#about)
+  - [Release](#history)
+  - [Credits](#credits)
+  - [License](#license)
 - [Donate](#donate)
 
 ## Installation
@@ -320,11 +322,42 @@ $ms-devices: (
 );
 ```
 
-## Credits
+## About
+
+### Relese History
+
+<table>
+<thead>
+<tr>
+<th><strong>DATE</strong></th>
+<th><strong>VERSION</strong></th>
+<th><strong>CHANGES</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2020-06-17</td>
+<td>v1.0.2</td>
+<td>fix</td>
+</tr>
+<tr>
+<td>2020-06-15</td>
+<td>v1.0.1</td>
+<td>fix</td>
+</tr>
+<tr>
+<td>2020-06-14</td>
+<td>v1.0.0</td>
+<td>Fix error</td>
+</tr>
+</tbody>
+</table>
+
+### Credits
 
 - [Roman Matviy](https://matviy.pp.ua)
 
-## License
+### License
 
 This software is open-source licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
