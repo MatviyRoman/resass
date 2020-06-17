@@ -332,7 +332,13 @@ This software is open-source licensed under the [MIT license](https://opensource
 
 Buy me a coffee :)
 
-QR Code <img src="https://github.com/MatviyRoman/sass-mq-mix/blob/master/img/qr-code.png?raw=true" alt="donation sass-mq-mix">
+QR Code
+
+<img src="https://github.com/MatviyRoman/sass-mq-mix/blob/master/img/qr-code.png?raw=true" alt="donation sass-mq-mix">
+
+or
+
+[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=E2H8329XLYRKQ&source=url)
 
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick" />
