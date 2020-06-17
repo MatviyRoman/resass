@@ -2,6 +2,7 @@
 
 <h1>sass media queries mixin</h1>
 
+[![Donate]](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=E2H8329XLYRKQ&source=url)
 [![Version](https://img.shields.io/npm/v/sass-mq-mix.svg)](http://npm.im/sass-mq-mix)
 [![Downloads](https://img.shields.io/npm/dm/sass-mq-mix.svg)](http://npm.im/sass-mq-mix)
 
@@ -27,6 +28,7 @@ Mixins for checking **group of devices** (mobile, tablet, laptop, desktop) or **
   - [Expanding the list of devices](#expanding-the-list-of-devices)
 - [Credits](#credits)
 - [License](#license)
+- [Donate](#donate)
 
 ## Installation
 
@@ -325,3 +327,16 @@ $ms-devices: (
 ## License
 
 This software is open-source licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Donate
+
+Buy me a coffee :)
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick" />
+<input type="hidden" name="hosted_button_id" value="E2H8329XLYRKQ" />
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+<img alt="" border="0" src="https://www.paypal.com/en_UA/i/scr/pixel.gif" width="1" height="1" />
+</form>
+
+Thank You!
