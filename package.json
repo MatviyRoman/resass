@@ -11,8 +11,12 @@
     "url": "git+https://github.com/MatviyRoman/sass-mq-mix.git"
   },
   "keywords": [
+    "frontend",
+    "front-end",
     "scss",
     "sass",
+    "sass-css",
+    "scss-css",
     "scss-media",
     "sass-media",
     "mq",
