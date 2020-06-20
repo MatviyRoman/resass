@@ -7,8 +7,8 @@
   - [Download](#download)
 - [Usage](#usage)
 - [Documentation](#documentation)
-  - [Examples](#examples)
   - [Include](#include)
+  - [Examples](#examples)
     - [Full include](#full-include)
     - [Short include](#short-include)
   - [List of supported devices](#list-of-supported-devices)
@@ -78,43 +78,27 @@ Mixins for checking **device by width and height** (width, min-width, max-width,
 Before
 
 ```scss
-1) @include screen() {
-}
-2) @include min-screen() {
-}
-3) @include max-screen() {
-}
-4) @include height() {
-}
-5) @include min-screen-height() {
-}
-6) @include max-screen-height() {
-}
-7) @include landscape() {
-}
-8) @include portrait() {
-}
+1) @include screen()
+2) @include min-screen()
+3) @include max-screen()
+4) @include height()
+5) @include min-screen-height()
+6) @include max-screen-height()
+7) @include landscape()
+8) @include portrait()
 ```
 
 After
 
 ```css
-1) @media only screen and (min-width: width) and (max-width: width) {
-}
-2) @media only screen and (min-width: width) {
-}
-3) @media only screen and (max-width: width) {
-}
-4) @media only screen and (min-height: height) and (max-height: height) {
-}
-5) @media only screen and (min-height: height) {
-}
-6) @media only screen and (max-height: height) {
-}
-7) @media only screen and (orientation: landscape) {
-}
-8) @media only screen and (orientation: portrait) {
-}
+1) @media only screen and (min-width: width) and (max-width: width)
+2) @media only screen and (min-width: width)
+3) @media only screen and (max-width: width)
+4) @media only screen and (min-height: height) and (max-height: height)
+5) @media only screen and (min-height: height)
+6) @media only screen and (max-height: height)
+7) @media only screen and (orientation: landscape)
+8) @media only screen and (orientation: portrait)
 ```
 
 #### Short include
@@ -122,43 +106,27 @@ After
 Before
 
 ```scss
-1) @include s() {
-}
-2) @include smin() {
-}
-3) @include smax() {
-}
-4) @include h() {
-}
-5) @include hmin() {
-}
-6) @include hmax() {
-}
-7) @include l() {
-}
-8) @include p() {
-}
+1) @include s()
+2) @include smin()
+3) @include smax()
+4) @include h()
+5) @include hmin()
+6) @include hmax()
+7) @include l()
+8) @include p()
 ```
 
 After
 
 ```css
-1) @media only screen and (min-width: width) and (max-width: width) {
-}
-2) @media only screen and (min-width: width) {
-}
-3) @media only screen and (max-width: width) {
-}
-4) @media only screen and (min-height: height) and (max-height: height) {
-}
-5) @media only screen and (min-height: height) {
-}
-6) @media only screen and (max-height: height) {
-}
-7) @media only screen and (orientation: landscape) {
-}
-8) @media only screen and (orientation: portrait) {
-}
+1) @media only screen and (min-width: width) and (max-width: width)
+2) @media only screen and (min-width: width)
+3) @media only screen and (max-width: width)
+4) @media only screen and (min-height: height) and (max-height: height)
+5) @media only screen and (min-height: height)
+6) @media only screen and (max-height: height)
+7) @media only screen and (orientation: landscape)
+8) @media only screen and (orientation: portrait)
 ```
 
 ### Examples:
